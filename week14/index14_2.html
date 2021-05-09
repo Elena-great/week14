@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert(sum())">+</button>
+    <button onclick="alert(min())">-</button>
+    <button onclick="alert(mult())">*</button>
+    <button onclick="alert(divis())">/</button>
+<script>
+
+let a,b;  
+
+function number(){
+a = +prompt('Введите первое число');
+b = +prompt('Введите второе число'); 
+}
+
+function sum() {
+number();
+return (a + b);
+}
+ 
+
+function min() {
+  number();
+  return (a - b);
+}
+
+function mult() {
+  number();
+  return (a * b);
+}
+
+function divis() {
+  number();
+  return (a / b);
+}
+
+    </script>
+</body>
+</html>
