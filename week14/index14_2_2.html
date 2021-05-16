@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width:400px;height:200px;background: burlywood; margin: 5px;" onclick="changeColor(0)"></div>
+    <div style="width:400px;height:200px;background: pink;margin: 5px;" onclick="changeColor(1)"></div>
+    <div style="width:400px;height:200px;background: yellowgreen;margin: 5px;" onclick="changeColor(2)"></div>
+    <script>
+        
+        let divs = document.getElementsByTagName('div');
+        
+        function changeColor(number) { 
+          divs[number].style.backgroundColor = 'yellow'
+        }
+    </script>
+</body>
+</html>
