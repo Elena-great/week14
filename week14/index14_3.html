@@ -13,17 +13,17 @@
     <button onclick="back()">Назад</button>
 </div> 
 <script>
-    const firstImage = 'assets/sea.jpg';
-    const secondImage = 'assets/sunset.jpg';
+    /*const firstImage = 'assets/sea.jpg';
+    const secondImage = 'assets/sunset.jpg';*/
 
     function next() {
-    let image = document.getElementById('image');
-    secondImage.src = 'assets/sunset.jpg';
+    let firstImage = document.getElementById('image');
+    firstImage.src = 'assets/sunset.jpg';
 }             
 
     function back() {
-    let image = document.getElementById('image');
-    firstImage.src = 'assets/sea.jpg';
+    let secondImage = document.getElementById('image');
+    secondImage.src = 'assets/sea.jpg';
 }
 </script>
 </body>
