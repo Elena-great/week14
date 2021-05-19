@@ -7,40 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-  <input type="number" id="num1"/>
-    <button onclick="alert(sum())">+</button>
-    <button onclick="alert(min())">-</button>
-    <button onclick="alert(mult())">*</button>
-    <button onclick="alert(divis())">/</button>
-    <input id="num2"/>
+ <div style="margin: 10px;"> <input type="text" id="num1"/></div>
+ <div style="margin: 10px;"> <input type="text" id="num2"/></div>
+   <div style="margin: 10px;"> 
+    <button onclick="sum()">+</button>
+    <button onclick="min()">-</button>
+    <button onclick="mult()">*</button>
+    <button onclick="divis()">/</button></div>
+   <div style="margin: 10px;" id="result"> </div>
 <script>
 
-let a,b;  
+let a,b; 
+let result = document.getElementById('result');
 
 function number(){
-a = +prompt('Введите первое число');
-b = +prompt('Введите второе число'); 
+a = document.getElementById('num1').value;
+b = document.getElementById('num2').value;
 }
 
 function sum() {
 number();
-return (a + b);
+result.innerHTML = (+a + +b);
 }
  
 
 function min() {
   number();
-  return (a - b);
+  result.innerHTML = (a - b);
 }
 
 function mult() {
   number();
-  return (a * b);
+  result.innerHTML = (a * b);
 }
 
 function divis() {
   number();
-  return (a / b);
+  result.innerHTML = (a / b);
 }
 
     </script>

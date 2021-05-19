@@ -7,18 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <img id="picture">
-    <button onclick='next'()>Вперед</button>
-    <button onclick='back'()>Назад</button>
-    <script>
-let picture = document.getElementById('picture')
+    <img src="assets/sea.jpg" id="image" width="40%">
+  <div> 
+    <button onclick="next()">Вперед</button>
+    <button onclick="back()">Назад</button>
+</div> 
+<script>
+    const firstImage = 'assets/sea.jpg';
+    const secondImage = 'assets/sunset.jpg';
 
-function next() {
+    function next() {
+    let image = document.getElementById('image');
+    secondImage.src = 'assets/sunset.jpg';
+}             
 
+    function back() {
+    let image = document.getElementById('image');
+    firstImage.src = 'assets/sea.jpg';
 }
-function back()  {
-
-}
-    </script>
+</script>
 </body>
 </html>

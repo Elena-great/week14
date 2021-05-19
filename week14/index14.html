@@ -8,14 +8,14 @@
 </head>
 <body>
     <p>Ваше имя:</p>
-    <p><input type="text" name="name" id="name" placeholder="Как вас зовут?"></p>
-    <p>Приветствие:</p>
-    <p><input type="text" name="hello" id="hello"></p>
+    <input type="text" name="name" id="yourname" placeholder="Как вас зовут?">
+    <button onclick='askname()'>Подтвердить</button>
+    <p><span id='hello'></span></p>
     <script>
-
-let div = document.getElementsByTagName('div');
-        function clickMe() {
-    console.log (document.getElementById('name').value);
-}
+    let name;
+    function askname() { 
+        name = document.getElementById('yourname').value;
+        document.getElementById('hello').innerHTML ="Привет, " + name + "!";
+        }
     </script>
 </html>
